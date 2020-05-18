@@ -1,0 +1,232 @@
+body {
+  background-color: #f6f6f6;
+}
+/* ==================================== */
+/* Nav styling */
+/* ==================================== */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#nav {
+  box-shadow: 10px 10px 5px grey;
+  width: auto;
+}
+.nav-ul {
+  background-color: #f6f6f6;
+}
+.nav-item {
+  float: right;
+}
+
+.nav-item .link {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#title {
+  float: left;
+  font-size: larger;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+.nav-active {
+  background-color: #852381;
+  color: #f6f6f6;
+}
+
+/* ==================================== */
+/* Home Page CSS */
+/* ==================================== */
+
+.slogan {
+  background-color: #852381;
+  color: #f6f6f6;
+  margin-right: auto;
+  padding: 15px;
+  width: 25vw;
+  border-radius: 70px 20px;
+  box-shadow: 10px 10px 5px black;
+}
+
+.entry {
+  background-color: #852381;
+  color: #f6f6f6;
+  margin-top: 15px;
+  margin-left: 10vw;
+  width: 17vw;
+  margin-right: auto;
+  padding: 15px;
+  border-radius: 70px 20px;
+  box-shadow: 10px 10px 5px black;
+}
+
+.absolute-container {
+  position: absolute;
+  top: 35%;
+  left: 60%;
+  height: 35%;
+  width: 35%;
+}
+
+.intro {
+  border-radius: 100px;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #f6f8fa;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  text-align: center;
+  font-family: Noto Sans, sans-serif;
+}
+
+.content {
+  text-align: center;
+  width: 50%;
+  font-family: Noto Sans, sans-serif;
+}
+
+.social {
+  margin-top: 1%;
+  margin-left: 25%;
+  height: 200px;
+}
+/* ==================================== */
+/* Footer Code */
+/* ==================================== */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #24292e;
+  color: #f6f6f6;
+  text-align: center;
+}
+
+/* ==================================== */
+/* Paralax Code */
+/* ==================================== */
+.parallax1 {
+  margin-top: 20px;
+  /* The image used */
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.macobserver.com%2Fwp-content%2Fuploads%2F2017%2F10%2Fcode-2434271_1280.jpg&f=1&nofb=1");
+
+  /* Set a specific height */
+  min-height: 800px;
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  margin-top: 20px;
+
+  background-image: url("./assets/IMG_20190208_222850.jpg");
+
+  /* Set a specific height */
+  min-height: 800px;
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ==================================== */
+/* Animations */
+/* ==================================== */
+li a:hover {
+  background-color: #852381;
+  color: #f6f6f6;
+}
+
+/* ==================================== */
+/* Spacers */
+/* ==================================== */
+.spacer {
+  margin-top: 200px;
+}
+/* ==================================== */
+/* Button Styles */
+/* ==================================== */
+button {
+  text-align: center;
+  display: block;
+  width: 200px;
+  height: 60px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  box-shadow: 4px 4px 5px gray;
+  transition: all 0.5s;
+}
+
+.a-color {
+  color: #ffffff;
+}
+
+.fa-github {
+  background-color: #24292e;
+  border-color: #ffffff;
+  border-radius: 4px;
+}
+
+.fa-twitter {
+  background-color: #1da1f2;
+  border-color: #ffffff;
+  border-radius: 4px;
+}
+.fa-linkedin {
+  background-color: #0077b5;
+  border-color: #ffffff;
+  border-radius: 4px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-size: 15px;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 100px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

@@ -1,0 +1,122 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --line-offset: calc((10vh + 8px) / 2);
+  background-color: #f6f6f6;
+}
+
+.nav-item .link:hover {
+  background-color: #852381;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 5fr 1fr;
+  background: #f6f6f6;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  display: flex;
+}
+.preview-list {
+  height: 100px;
+  margin-top: -25px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.nav-item {
+  float: right;
+}
+.nav-item .link {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+}
+.nav-ul {
+  display: block;
+  margin: 8px;
+}
+
+.nav-active {
+  background-color: #852381;
+  color: #f6f6f6;
+}
+
+.tab {
+  width: calc(10vh + 8px);
+  height: calc(10vh + 8px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+  shape-outside: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+  z-index: 0;
+  transition: width 0.5s;
+}
+
+.tab img {
+  width: 10vh;
+  height: 10vh;
+  z-index: 10;
+  cursor: pointer;
+  clip-path: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+  shape-outside: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+  transition: width 0.5s;
+}
+
+[type="radio"] {
+  display: none;
+}
+
+.tab {
+  background: linear-gradient(
+    grey,
+    #021919 var(--line-offset),
+    #021919 var(--line-offset)
+  );
+  box-shadow: 10px 10px 5px grey;
+}
+
+[type="radio"]:checked ~ label ~ .content {
+  text-align: center;
+  z-index: 8;
+}
+
+[type="radio"]:checked ~ label .tab {
+  width: 0;
+}
+
+.content {
+  position: absolute;
+  background: #f6f8fa;
+  top: 6vh;
+  left: 0;
+  width: 100%;
+  height: 81vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.content img {
+  height: auto;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 10px 10px 5px grey;
+}
