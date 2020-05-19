@@ -1,5 +1,6 @@
 # HTML-CSS
-Deployment link: https://1fungi99.github.io/html-css/
+[Deployment link](https://1fungi99.github.io/html-css/)
+
 Exercise Objective: Demonstrate an understanding of HTML and CSS.
 
 Duration: 1 day
