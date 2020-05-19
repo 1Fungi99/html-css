@@ -1,6 +1,9 @@
 body {
   background-color: #f6f6f6;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 /* ==================================== */
 /* Nav styling */
 /* ==================================== */
@@ -155,7 +158,36 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.parallax3 {
+  margin-top: 20px;
 
+  background-image: url("./assets/IMG_20200411_102007__01.jpg");
+
+  /* Set a specific height */
+  min-height: 800px;
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax4 {
+  margin-top: 20px;
+
+  background-image: url("./assets/PCFeature1.jpg");
+
+  /* Set a specific height */
+  min-height: 800px;
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* ==================================== */
 /* Animations */
 /* ==================================== */
