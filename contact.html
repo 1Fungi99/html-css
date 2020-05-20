@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="form.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
     <title>Contact</title>
 </head>
 
 <body>
     <div id="nav">
         <ul class="nav-ul">
-            <li id="title">Dichotamy Studios</li>
+            <img class="logo" src="./assets/Dichotomy (4).png" alt="Oops">
+            <!-- <li id="title">Dichotamy Studios</li> -->
             <div>
                 <li class="nav-item"><a href="contact.html" class="nav-active link">Contact</a></li>
                 <li class="nav-item"><a href="gallery.html" class=" link">Gallery</a></li>
@@ -22,20 +23,65 @@
         </ul>
     </div>
 
-    <div class="flex" style="justify-content: center; margin-top: 20%;">
-        <div class="form-content" style="background-color: aquamarine;">
-            <form>
-                <label for="fname">First name:</label><br>
-                <input style="text-align: center" type="text" id="fname" name="fname" value="" placeholder="John"><br>
-                <label for="lname">Last name:</label><br>
-                <input style="text-align: center" type="text" id="lname" name="lname" value="" placeholder="Doe"><br>
-                <label for="lname">Message:</label><br>
-                <textarea style="text-align: center" name="message" rows="10" cols="30"
-                    placeholder="Describe your message in detail."></textarea>
-                <br>
-                <input type="submit" value="Submit">
-            </form>
+    <div class="fire">
+        <div class="fire-left">
+            <div class="main-fire"></div>
+            <div class="particle-fire"></div>
         </div>
+        <div class="fire-main">
+            <div class="main-fire"></div>
+            <div class="particle-fire"></div>
+        </div>
+        <div class="fire-right">
+            <div class="main-fire"></div>
+            <div class="particle-fire"></div>
+        </div>
+        <div class="fire-bottom">
+            <div class="main-fire"></div>
+        </div>
+    </div>
+    <div class="flex">
+        <div class="shade"></div>
+        <div class="social">
+            <button class="button fa-github">
+                <a class="a-color" href="https://github.com/1Fungi99">
+                    <span>Github</span>
+                </a>
+            </button>
+            <button class="button fa-twitter">
+                <a class="a-color" href="https://twitter.com/JustinReedCheng">
+                    <span>Twitter</span>
+                </a>
+            </button>
+            <button class="button fa-linkedin">
+                <a class="a-color" href="https://www.linkedin.com/in/justin-reed-cheng-37b425194/">
+                    <span>LinkedIn</span>
+                </a>
+            </button>
+            <button class="button fa-download">
+                <a class="a-color" href="./assets/Resume-Justin-Cheng.pdf" download>
+                    <span>Resume</span>
+                </a>
+            </button>
+        </div>
+        <div class="form-content">
+
+            <label class="label" for="fname">First name:</label><br>
+            <input class="input" style="text-align: center" type="text" id="fname" name="fname" placeholder="Jerel"><br>
+            <br>
+
+            <label class="label" for="lname">Last name:</label><br>
+            <input class="input" style="text-align: center" type="text" id="lname" name="lname"
+                placeholder="Balzano"><br>
+            <br>
+            <label class="label" for="lname">Message:</label><br>
+            <textarea class="input message" style="text-align: center" name="message" rows="10" cols="30"
+                placeholder="Describe your message in detail."></textarea>
+            <br>
+            <input class="opacity" type="submit" value="Submit">
+
+        </div>
+
     </div>
 </body>
 

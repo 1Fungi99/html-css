@@ -1,5 +1,15 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body {
-  background-color: #f6f6f6;
+  background-color: #000000;
+  padding: 20px;
+  margin: 0px;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -15,11 +25,12 @@ ul {
   overflow: hidden;
 }
 #nav {
-  box-shadow: 10px 10px 5px grey;
+  /* box-shadow: 10px 10px 15px grey; */
   width: auto;
+  --line-offset: 0;
 }
 .nav-ul {
-  background-color: #f6f6f6;
+  background-color: #000000;
 }
 .nav-item {
   float: right;
@@ -30,23 +41,21 @@ ul {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: "Times New Roman", Times, serif;
-}
+  color: #ffffff;
 
-#title {
-  float: left;
-  font-size: larger;
-  display: block;
-  color: #333;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: monospace;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .nav-active {
-  background-color: #852381;
-  color: #f6f6f6;
+  background-color: #49c5b6;
+  color: #ffffff;
+}
+
+.logo {
+  margin-left: 5px;
+  /* width: 5%; */
+  height: 5vh;
+  float: left;
 }
 
 /* ==================================== */
@@ -54,25 +63,31 @@ ul {
 /* ==================================== */
 
 .slogan {
-  background-color: #852381;
-  color: #f6f6f6;
+  background-color: #23e3ef;
+  color: #010423;
   margin-right: auto;
   padding: 15px;
   width: 25vw;
   border-radius: 70px 20px;
-  box-shadow: 10px 10px 5px black;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  box-shadow: 10px 10px 15px rgb(19, 19, 19);
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .entry {
-  background-color: #852381;
-  color: #f6f6f6;
+  background-color: #23e3ef;
+  color: #010423;
   margin-top: 15px;
   margin-left: 10vw;
   width: 17vw;
   margin-right: auto;
   padding: 15px;
+  padding-left: 3vw;
+  padding-right: 3vw;
   border-radius: 70px 20px;
-  box-shadow: 10px 10px 5px black;
+  box-shadow: 10px 10px 15px rgb(20, 20, 20);
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .absolute-container {
@@ -88,40 +103,40 @@ ul {
   width: 75%;
   margin-right: auto;
   margin-left: auto;
-  background-color: #f6f8fa;
+  background-color: #000000;
 }
 .flex {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
 }
 
 .header {
   text-align: center;
-  font-family: Noto Sans, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  color: aliceblue;
 }
 
 .content {
-  text-align: center;
-  width: 50%;
-  font-family: Noto Sans, sans-serif;
+  text-align: left;
+  width: 50vw;
+  font-family: "Josefin Sans", sans-serif;
+  color: aliceblue;
 }
 
 .social {
-  margin-top: 1%;
-  margin-left: 25%;
-  height: 200px;
+  margin-top: 2vh;
+  margin-right: 5%;
+  height: 23vh;
 }
 /* ==================================== */
-/* Footer Code */
+/* Joker Code */
 /* ==================================== */
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #24292e;
-  color: #f6f6f6;
-  text-align: center;
+.joker {
+  position: absolute;
+  right: 1vw;
+  bottom: -265vh;
+  width: 50px;
+  transform: scaleX(-1);
 }
 
 /* ==================================== */
@@ -129,11 +144,13 @@ ul {
 /* ==================================== */
 .parallax1 {
   margin-top: 20px;
+  opacity: 0.95;
+
   /* The image used */
-  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.macobserver.com%2Fwp-content%2Fuploads%2F2017%2F10%2Fcode-2434271_1280.jpg&f=1&nofb=1");
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmarketingweek.imgix.net%2Fcontent%2Fuploads%2F2017%2F05%2F12103940%2FCoding-featured.jpg%3Fauto%3Dcompress%2Cformat%2C%26crop%3Dfaces%2Centropy%2Cedges%26fit%3Dcrop%26q%3D60%26w%3D1240%26h%3D1040&f=1&nofb=1");
 
   /* Set a specific height */
-  min-height: 800px;
+  min-height: 75vh;
   width: 100%;
 
   /* Create the parallax scrolling effect */
@@ -145,11 +162,11 @@ ul {
 
 .parallax2 {
   margin-top: 20px;
-
-  background-image: url("./assets/IMG_20190208_222850.jpg");
+  opacity: 0.95;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flightpaintingphotography.com%2Fwp-content%2Fuploads%2F2015%2F12%2FLight-Painting-Lens-Swap-James-Deluna-Moon.jpg&f=1&nofb=1");
 
   /* Set a specific height */
-  min-height: 800px;
+  min-height: 75vh;
   width: 100%;
 
   /* Create the parallax scrolling effect */
@@ -160,11 +177,12 @@ ul {
 }
 .parallax3 {
   margin-top: 20px;
+  opacity: 0.95;
 
-  background-image: url("./assets/IMG_20200411_102007__01.jpg");
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.photographylife.com%2Fwp-content%2Fuploads%2F2012%2F09%2FTamron-24-70mm-Sample-1.jpg&f=1&nofb=1");
 
   /* Set a specific height */
-  min-height: 800px;
+  min-height: 75vh;
   width: 100%;
 
   /* Create the parallax scrolling effect */
@@ -175,11 +193,12 @@ ul {
 }
 .parallax4 {
   margin-top: 20px;
+  opacity: 0.95;
 
-  background-image: url("./assets/PCFeature1.jpg");
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F4C_yfVDXgT8%2Fmaxresdefault.jpg&f=1&nofb=1");
 
   /* Set a specific height */
-  min-height: 800px;
+  min-height: 75vh;
   width: 100%;
 
   /* Create the parallax scrolling effect */
@@ -192,8 +211,8 @@ ul {
 /* Animations */
 /* ==================================== */
 li a:hover {
-  background-color: #852381;
-  color: #f6f6f6;
+  background-color: #49c5b6;
+  color: #ffffff;
 }
 
 /* ==================================== */
