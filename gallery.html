@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content-gallery zoom="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="gallery.css">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content-gallery zoom="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
 
     <title>Gallery</title>
 </head>
@@ -14,7 +15,8 @@
 <body>
     <div id="nav">
         <ul class="nav-ul">
-            <li id="title">Dichotamy Studios</li>
+            <img class="logo" src="./assets/Dichotomy (4).png" alt="Oops">
+
             <div>
                 <li class="nav-item"><a href="contact.html" class="link">Contact</a></li>
                 <li class="nav-item"><a href="gallery.html" class="nav-active link">Gallery</a></li>
@@ -23,109 +25,128 @@
         </ul>
     </div>
 
+    <div class="main">
 
-    <div class="container">
-        <div class="full-view"></div>
-        <div class="preview-list">
-            <ul class="plist">
-                <li>
-                    <input type="radio" id="tab-1" name="gallery-group">
-                    <label for="tab-1">
-                        <div class="tab">
-                            <img
-                                src="https://lh3.googleusercontent.com/pOaQ-CcFw8AhyRyL4A6zlKUiR2MMYUx3WfTOJYpWW_WnxQ0XIfrO90cFwMT-NLoEYGgOrdf74Z1B0cu5IEe_6-xMNRH-rxEqA1P1NGP11WIZ3qFol9R4phOHVYqcwT2XtKUgdsTWXJiFi_EHeyjOf8-8mxkjy7RoVIl0PjH9YxL1Odn4LfGhJm013cqZ-GTZWk5tJUNBwsOsuZBkvusPOMMv6Wy61eLDEEQRyIUXoy6NwAEq7MG6Nj-kfUf3dZz6xs-C7CUYNo2MbkNL95AR_-uUyOOg3soweYnt96RJat09vZstgbSN1XX4i6oQVaxM_1tB243mNOG8KBsE9Gy6mvTuuLHRHdRLmOXQuEtpuR8tw-zAkW4IjDFh2WDc20YPBQbLUx7CSdhoP7kYCvuA3zBVRIbBCRgwtBjvYukX1sDFNIJnWcHocKJYi6iwvHupmEMLiRH4qvEHZm3xk_92gx5qahg4tPsttjnFydE_lEBvezpSgg4t766bPaLN1shBQxCidf4oi2gIdxlTYvydOZMhjq8ll_19sXthfDeJz25JeweN9CffnWuS_732LwtgK4sPn6Bu4kkuNgy0h4zX5LcexudEE_y2jRTZBcoBFsrf_4A4J9Q1FgnQHkoo1QYa1-GqvyPBsSiaXEwU___e8iO7IejeX4TLsCuTPxabLCSFFyyPcUgBwWPg8s6hgw=w1887-h861-no?authuser=0" />
-                        </div>
-                    </label>
-                    <div class="content">
-                        <img
-                            src="https://lh3.googleusercontent.com/pOaQ-CcFw8AhyRyL4A6zlKUiR2MMYUx3WfTOJYpWW_WnxQ0XIfrO90cFwMT-NLoEYGgOrdf74Z1B0cu5IEe_6-xMNRH-rxEqA1P1NGP11WIZ3qFol9R4phOHVYqcwT2XtKUgdsTWXJiFi_EHeyjOf8-8mxkjy7RoVIl0PjH9YxL1Odn4LfGhJm013cqZ-GTZWk5tJUNBwsOsuZBkvusPOMMv6Wy61eLDEEQRyIUXoy6NwAEq7MG6Nj-kfUf3dZz6xs-C7CUYNo2MbkNL95AR_-uUyOOg3soweYnt96RJat09vZstgbSN1XX4i6oQVaxM_1tB243mNOG8KBsE9Gy6mvTuuLHRHdRLmOXQuEtpuR8tw-zAkW4IjDFh2WDc20YPBQbLUx7CSdhoP7kYCvuA3zBVRIbBCRgwtBjvYukX1sDFNIJnWcHocKJYi6iwvHupmEMLiRH4qvEHZm3xk_92gx5qahg4tPsttjnFydE_lEBvezpSgg4t766bPaLN1shBQxCidf4oi2gIdxlTYvydOZMhjq8ll_19sXthfDeJz25JeweN9CffnWuS_732LwtgK4sPn6Bu4kkuNgy0h4zX5LcexudEE_y2jRTZBcoBFsrf_4A4J9Q1FgnQHkoo1QYa1-GqvyPBsSiaXEwU___e8iO7IejeX4TLsCuTPxabLCSFFyyPcUgBwWPg8s6hgw=w1887-h861-no?authuser=0" />
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" id="tab-2" name="gallery-group">
-                    <label for="tab-2">
-                        <div class="tab">
-                            <img
-                                src="https://lh3.googleusercontent.com/Mir_tkql3g4F6g-ygmz813C5XSkkKDMW0kuXPP5cG-_Z8-zuihtYVgUYtbyCKGflJrPS1B55X8ZMKWSnSoSVmPmsYMI_z2F9mrzE5ATsHJRwh9sWb0mhbKV1RSCgX98DThY70lENf5PCwf3liR8d_qTa4MVtLqHG2-pf1Qs15ow8-46x-CFyxpFaQvxhXakm-YiiRhKw7EamTWE7vF4s8rNW3eL98-dsVcnYBesF-h5XeGOGd50xzrtTPhvsLiLXmxwpWsHdJR8snpTff2OJ82WTVGYPmLMb5AbkNkXXblO4HgQgjc-pvjrfwp9KnTkg7L3zm_4SRhDz-ZYPU2FcLoeP8SH0IIlC3cghszBTvTpnrs2154DL30s5-06eXfu8mA6KrlMt56JyXOK0qGtkuDYcIDWyRkEN_7tGWgaXqRicGaBDRtTBBqCdAMuw8bPLJbghtCpVMnnWR0Ywpz_yc5AKNybp_tYgMCdZtV-VCJ-Ga0EJz_rqtrYMN9oMBisOx2nS1APcC2PUNeKhVw7QlaolrRkY-XAmHVyQFDbV0AZBJAus1Vguq4q5tJu6tFeuVRwGQWXsdfeUkxdb-GjiN_EHb0wBBje1wvgrh-MWuCJgENqzGXg9Slau_9DF1uKIEkYSkZV85Seng8fY_7vbf-9aOj430ffHU30JR43kgDdvDY2vT7mI-BlJZ9Rugw=w1290-h968-no?authuser=0" />
-                        </div>
-                    </label>
-                    <div class="content">
-                        <img
-                            src="https://lh3.googleusercontent.com/Mir_tkql3g4F6g-ygmz813C5XSkkKDMW0kuXPP5cG-_Z8-zuihtYVgUYtbyCKGflJrPS1B55X8ZMKWSnSoSVmPmsYMI_z2F9mrzE5ATsHJRwh9sWb0mhbKV1RSCgX98DThY70lENf5PCwf3liR8d_qTa4MVtLqHG2-pf1Qs15ow8-46x-CFyxpFaQvxhXakm-YiiRhKw7EamTWE7vF4s8rNW3eL98-dsVcnYBesF-h5XeGOGd50xzrtTPhvsLiLXmxwpWsHdJR8snpTff2OJ82WTVGYPmLMb5AbkNkXXblO4HgQgjc-pvjrfwp9KnTkg7L3zm_4SRhDz-ZYPU2FcLoeP8SH0IIlC3cghszBTvTpnrs2154DL30s5-06eXfu8mA6KrlMt56JyXOK0qGtkuDYcIDWyRkEN_7tGWgaXqRicGaBDRtTBBqCdAMuw8bPLJbghtCpVMnnWR0Ywpz_yc5AKNybp_tYgMCdZtV-VCJ-Ga0EJz_rqtrYMN9oMBisOx2nS1APcC2PUNeKhVw7QlaolrRkY-XAmHVyQFDbV0AZBJAus1Vguq4q5tJu6tFeuVRwGQWXsdfeUkxdb-GjiN_EHb0wBBje1wvgrh-MWuCJgENqzGXg9Slau_9DF1uKIEkYSkZV85Seng8fY_7vbf-9aOj430ffHU30JR43kgDdvDY2vT7mI-BlJZ9Rugw=w1290-h968-no?authuser=0" />
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" id="tab-3" name="gallery-group">
-                    <label for="tab-3">
-                        <div class="tab">
-                            <img
-                                src="https://lh3.googleusercontent.com/Pk_GJIE90m1zy6lly52AZkR9_hrJEd_RXEkncJdMjuGUGAB9XbwoXYD1_ubeYqkqTwPfsGK0HWof3b-EcdsG_stZt5wEg7u-_-ubxVf7ebL2rNgepGMgldNQZKhFdDXCm7cuur8Totl_6pOKLynkRSLOxbnhyFrydm3TPF0N5Junj98HWV9x5D0lGxnSs5ORfNi_AiTF-dc9oftgqEhgZlhCMDsPfhW1MQZO42o0cnnM24ZPlkoDtTNHLLqYe9MditlsVzDPc8q1DHOFsQ7tg3UIPGPi8iKrEO5JW6wiHPjrxqvQFVscX2_Ciir6hr-VzEFIntiQ44glGhWzFmic19OF4BwonUj1G_F-a1Va5fyIkMjxNoFk5nOENqTIY5iTYCeZoAb4uDbtd19uWm4-euMM7mUOjkVT1TJYUk7O1zZef-r9qtHcM2MOCTna4u1a0f8fyQ3cqFnqrNW1NXlHG2OePSsC3DEPDyXDIa0PWyZRHbMdKjUjBYNHtr3qQxf5S3TDKVFQwBYVumihpf25iM49ZZ6LXirMQwGZE4PXtpd3FP_-Kb1OU3dm1ybuZgiWDZn8rE4zaDwxyvFw1FtAi-9-zjQgsncpfj2v-u4ORWrngicBCLMoGwCLQ-BNXreklKfYLLYKS3JXsebsPaoeDkaNQGazc1_8jAzbY6voZM5K4MNbe6W5yU3g-wFa1Q=w1887-h865-no?authuser=0" />
-                        </div>
-                    </label>
-                    <div class="content">
-                        <img
-                            src="https://lh3.googleusercontent.com/Pk_GJIE90m1zy6lly52AZkR9_hrJEd_RXEkncJdMjuGUGAB9XbwoXYD1_ubeYqkqTwPfsGK0HWof3b-EcdsG_stZt5wEg7u-_-ubxVf7ebL2rNgepGMgldNQZKhFdDXCm7cuur8Totl_6pOKLynkRSLOxbnhyFrydm3TPF0N5Junj98HWV9x5D0lGxnSs5ORfNi_AiTF-dc9oftgqEhgZlhCMDsPfhW1MQZO42o0cnnM24ZPlkoDtTNHLLqYe9MditlsVzDPc8q1DHOFsQ7tg3UIPGPi8iKrEO5JW6wiHPjrxqvQFVscX2_Ciir6hr-VzEFIntiQ44glGhWzFmic19OF4BwonUj1G_F-a1Va5fyIkMjxNoFk5nOENqTIY5iTYCeZoAb4uDbtd19uWm4-euMM7mUOjkVT1TJYUk7O1zZef-r9qtHcM2MOCTna4u1a0f8fyQ3cqFnqrNW1NXlHG2OePSsC3DEPDyXDIa0PWyZRHbMdKjUjBYNHtr3qQxf5S3TDKVFQwBYVumihpf25iM49ZZ6LXirMQwGZE4PXtpd3FP_-Kb1OU3dm1ybuZgiWDZn8rE4zaDwxyvFw1FtAi-9-zjQgsncpfj2v-u4ORWrngicBCLMoGwCLQ-BNXreklKfYLLYKS3JXsebsPaoeDkaNQGazc1_8jAzbY6voZM5K4MNbe6W5yU3g-wFa1Q=w1887-h865-no?authuser=0" />
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" id="tab-4" name="gallery-group" checked>
-                    <label for="tab-4">
-                        <div class="tab">
-                            <img
-                                src="https://lh3.googleusercontent.com/m2xUgiDjgKObhH_JyyiKbs7oWIsBTl1o8a18cSXmel8TBbLT1604tQol-MII7Z0HLeikeUgTUkUG8s_8s5bCnpHAAdS1G2MeTVMlJ8YO2yq5HalQ0MrEvlu8wD1_bRL4pXQ7SHDGgjT2KaRIFKjaQxGwQ65eYqC0EPb79ohozGtSKHhsTvHrR_ushp9ojBohlk0DXrEqeFHS3d97MozVyFckKxZR1DelY-igjFl-xpBv9GbkTr1RN-2Xrz7mlNupwLyH2RNDKH_aW4oJc9ClJq5W9FD9FgvnJ98Hv51ZsheFvD48l2Q7H_Dwqr95ggwUyASdPZ3FTqijVC_RDfcVOgQpKd4lN9Ri7fa0YQ6VtZ5a_d4eVzkD1M2Q4o3GECY-1_qtd3cZU59-eK9mxPvHTZwz0O3crhvqOYPCHPUCMqDBcXLnRV5hzVSm6Q00oR182UIWC0AtpV3a_L4DPDQXpEE90Bb0jMCM9MGo08FxBDWSigjbEFt1Uy4VzOM9on24O1DKLw0tB9l9ugN1QhglAq_fJl4CD9OHR5Yda6WRrUyOr1D7dDGKzaynq82uibwU7t3ikUUnYSy3UxqfU10_mrjCLROk7PKHNkdSv5w4BmYlTMxY_8uaFWgFmEpa6oVyLv-vhS4n--7-GGurWoo5xRpw1L6aUquvYyL0rS--5EoTzAeQfZ4fcXPzKKFxNg=w1290-h968-no?authuser=0" />
-                        </div>
-                    </label>
-                    <div class="content">
-                        <img
-                            src="https://lh3.googleusercontent.com/m2xUgiDjgKObhH_JyyiKbs7oWIsBTl1o8a18cSXmel8TBbLT1604tQol-MII7Z0HLeikeUgTUkUG8s_8s5bCnpHAAdS1G2MeTVMlJ8YO2yq5HalQ0MrEvlu8wD1_bRL4pXQ7SHDGgjT2KaRIFKjaQxGwQ65eYqC0EPb79ohozGtSKHhsTvHrR_ushp9ojBohlk0DXrEqeFHS3d97MozVyFckKxZR1DelY-igjFl-xpBv9GbkTr1RN-2Xrz7mlNupwLyH2RNDKH_aW4oJc9ClJq5W9FD9FgvnJ98Hv51ZsheFvD48l2Q7H_Dwqr95ggwUyASdPZ3FTqijVC_RDfcVOgQpKd4lN9Ri7fa0YQ6VtZ5a_d4eVzkD1M2Q4o3GECY-1_qtd3cZU59-eK9mxPvHTZwz0O3crhvqOYPCHPUCMqDBcXLnRV5hzVSm6Q00oR182UIWC0AtpV3a_L4DPDQXpEE90Bb0jMCM9MGo08FxBDWSigjbEFt1Uy4VzOM9on24O1DKLw0tB9l9ugN1QhglAq_fJl4CD9OHR5Yda6WRrUyOr1D7dDGKzaynq82uibwU7t3ikUUnYSy3UxqfU10_mrjCLROk7PKHNkdSv5w4BmYlTMxY_8uaFWgFmEpa6oVyLv-vhS4n--7-GGurWoo5xRpw1L6aUquvYyL0rS--5EoTzAeQfZ4fcXPzKKFxNg=w1290-h968-no?authuser=0" />
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" id="tab-5" name="gallery-group">
-                    <label for="tab-5">
-                        <div class="tab">
-                            <img
-                                src="https://lh3.googleusercontent.com/x2KS9AwUk1vXBF1q95nsMogbyJXicV83pu_uQmPj2bCSFxmN-CZvbOdAkvu43PDu_syqfO4Mo4kFskPzCbpNYz1xwiTEGHkBfCbX6n9xMTyoZGTFjGg7a7MjtC_hOrGZ_QY__C4Vle76QByngFpmcDjA5-LlaiCM0XSxcnag1cvFk1r9k7ieIOYk-HZxpySsw_K340EEel-WvYnNmzKLXHm70PxfWF7hwzuPzOLD1NDNYoRnlLP3y28N_ufLL-lzI-04ffUrOuqzQ-iwme8LWeWy_zex0h9IUgzgRb_3mFBwBfAIEtqY_Lza5SuKvBtkFo9XJT5__VkJ28bWxvhKe063qGRTticXO6VZ3mfbCo7VuvAssbv9SiBeKtEDPWI8ZOLgaA47yMSQEpPLSi98K1EVQWTZcBopxCaxSJtBz7RxkjICOlx_K2S_u9xAGAWBoTO065RnkRg2rpsLb4mijAkQPR_2hFH1zw0f54ewBfkK9lw5UNhTODVmMUmgEzCHyAfw2Cj8GIP2WPeblWIXKU5PMrLu_FolpM8wcZgM9m2WHzScNSf-8XdFLvjDd7gwpELKKNm8S956tb52OyM6fnALm8oTCNZwbjhil-8Y4UCnGl6NEq3UV448Rqx23zLmVJ4TOYT3WY99snqxtgHYRB-cl4OERDeqn8H5VYjqvJSbC48F95SbwERkT1Y8hg=w1887-h861-no?authuser=0" />
-                        </div>
-                    </label>
-                    <div class="content">
-                        <img
-                            src="https://lh3.googleusercontent.com/x2KS9AwUk1vXBF1q95nsMogbyJXicV83pu_uQmPj2bCSFxmN-CZvbOdAkvu43PDu_syqfO4Mo4kFskPzCbpNYz1xwiTEGHkBfCbX6n9xMTyoZGTFjGg7a7MjtC_hOrGZ_QY__C4Vle76QByngFpmcDjA5-LlaiCM0XSxcnag1cvFk1r9k7ieIOYk-HZxpySsw_K340EEel-WvYnNmzKLXHm70PxfWF7hwzuPzOLD1NDNYoRnlLP3y28N_ufLL-lzI-04ffUrOuqzQ-iwme8LWeWy_zex0h9IUgzgRb_3mFBwBfAIEtqY_Lza5SuKvBtkFo9XJT5__VkJ28bWxvhKe063qGRTticXO6VZ3mfbCo7VuvAssbv9SiBeKtEDPWI8ZOLgaA47yMSQEpPLSi98K1EVQWTZcBopxCaxSJtBz7RxkjICOlx_K2S_u9xAGAWBoTO065RnkRg2rpsLb4mijAkQPR_2hFH1zw0f54ewBfkK9lw5UNhTODVmMUmgEzCHyAfw2Cj8GIP2WPeblWIXKU5PMrLu_FolpM8wcZgM9m2WHzScNSf-8XdFLvjDd7gwpELKKNm8S956tb52OyM6fnALm8oTCNZwbjhil-8Y4UCnGl6NEq3UV448Rqx23zLmVJ4TOYT3WY99snqxtgHYRB-cl4OERDeqn8H5VYjqvJSbC48F95SbwERkT1Y8hg=w1887-h861-no?authuser=0" />
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" id="tab-6" name="gallery-group">
-                    <label for="tab-6">
-                        <div class="tab">
-                            <img
-                                src="https://lh3.googleusercontent.com/lm5RcrzWCG7GOeHr7covkA6eqztfDgfXMuEgmdIMDUKIrbywWrFUO0dFoFU8exYM6FTGl4kJuyGOLWsVL3M-bp83FeVfIN0qx7alsw7_wBlFhD_AeGeqa1tXv9n3baTDry4sZdb0usufnCoq1zULHSYaSRdCH9XNKKD8R47snm5EIOgrdTtvtWrX5C5NcvKYa93dlDJUdY77p-WwOqe0zqdBHFzoB9LghUwfzSgHe5lNoUG1-OlJpZO2CBbxtJSvAlWmS7AWIz3OHj3APeSTyS4tr8--viTxMFJmAYRN-HbcHRtSwXopwto_rI_YKMKYJSaFLK5COBoXgkdbOd7lKEavaxMqu6SvpU96n95kaw3vTS3OUTI7LtYwCcP6fhLsObA2PohhOx3uIhnzahDRByv58kXJNjXB3uU0qeDfrfzSXKqbqBS7DmTTBTzcqkpRbg0lcCGrgP5CSE77lkzyArRicacnB91Eo96zlxUaEmiN0PvN9sRjAx4-E_V1XCxpfvJdXZ4UJaRh5ev4ihXOBtGnxVH0GHGKCQuvk07YMj9nqwYxAzNL9FFlzhOsXvSYaAhX0nEqEXP9QXwKIGhzOq0pxaYS6rhAEcyp33bbx8FybsIQmTFFWWdLhBcMyPpoqHCaBpcDHno-4UgnG91KSCKnqmkAPOoC-0aOLxWmTyZI6AnHet9lCs2feaa8Iw=w1887-h865-no?authuser=0" />
-                        </div>
-                    </label>
-                    <div class="content">
-                        <img
-                            src="https://lh3.googleusercontent.com/lm5RcrzWCG7GOeHr7covkA6eqztfDgfXMuEgmdIMDUKIrbywWrFUO0dFoFU8exYM6FTGl4kJuyGOLWsVL3M-bp83FeVfIN0qx7alsw7_wBlFhD_AeGeqa1tXv9n3baTDry4sZdb0usufnCoq1zULHSYaSRdCH9XNKKD8R47snm5EIOgrdTtvtWrX5C5NcvKYa93dlDJUdY77p-WwOqe0zqdBHFzoB9LghUwfzSgHe5lNoUG1-OlJpZO2CBbxtJSvAlWmS7AWIz3OHj3APeSTyS4tr8--viTxMFJmAYRN-HbcHRtSwXopwto_rI_YKMKYJSaFLK5COBoXgkdbOd7lKEavaxMqu6SvpU96n95kaw3vTS3OUTI7LtYwCcP6fhLsObA2PohhOx3uIhnzahDRByv58kXJNjXB3uU0qeDfrfzSXKqbqBS7DmTTBTzcqkpRbg0lcCGrgP5CSE77lkzyArRicacnB91Eo96zlxUaEmiN0PvN9sRjAx4-E_V1XCxpfvJdXZ4UJaRh5ev4ihXOBtGnxVH0GHGKCQuvk07YMj9nqwYxAzNL9FFlzhOsXvSYaAhX0nEqEXP9QXwKIGhzOq0pxaYS6rhAEcyp33bbx8FybsIQmTFFWWdLhBcMyPpoqHCaBpcDHno-4UgnG91KSCKnqmkAPOoC-0aOLxWmTyZI6AnHet9lCs2feaa8Iw=w1887-h865-no?authuser=0" />
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" id="tab-7" name="gallery-group">
-                    <label for="tab-7">
-                        <div class="tab">
-                            <img
-                                src="https://lh3.googleusercontent.com/Ep5U58U0LQC5urs_ONK8eIzuhu5PwEtqb2ml6QQVaeqdJYDwF7zU8jOjWYOEmXIQfiplALnh0DbEgy9KoIrtotUC7qqmr1uj3-KMl-jKozlbo8F1A_i_Xbn0jEscyDQWVvxqYkyJ77uwaHDTYgJS46euXOV-hkgnsKj5SB7QK5EU2HigPQAu2D_GKrak6buhdJPCDffxjsMXJ8eESMFbakfJNovSFTAw1Zu5pzBPzgMl6dKot3ziBRSk4EOZNypcDwXTIVIW1KDIHd3AJXILjWGIQOPfR7q6ceDC7VClxMrWtr478Uyr9GAhz98B0jmZDoPDF9hbaFOAaOClm2wd9hnWTebaIMB36pL4klMb6sZM1WYXmN4eUhLDPTW8uu55bzV2bJatgTPhs8jol8KPZiD5UIiQXG3_qigkqXj71em8q96RenFut4XI6MZTC3ZI5icGmJgMxRNKQMxz6sIU8KBzJewbN1ZGIINjX7TQZKAvsSrc_nxK8jOQSlCg_VQ1_b_llXOzmJS4EWUe2aoCklCfGdMG86RYTYq6FcDRNiS7pPjGAi9knX84LuFHLTC9XvIXJS7POiy1xJ6BG3ONf6iSGTpHGdtQyTmI8v0bumUgIpCQyOYJz-ySLf7pDPfJgjh1VahDHt6T5y_9AklVCvjixjWxCqU0AVXCvbfkGgcCX-kFo5Raxn3hT0YSDw=w472-h216-no?authuser=0" />
-                        </div>
-                    </label>
-                    <div class="content">
-                        <img
-                            src="https://lh3.googleusercontent.com/Ep5U58U0LQC5urs_ONK8eIzuhu5PwEtqb2ml6QQVaeqdJYDwF7zU8jOjWYOEmXIQfiplALnh0DbEgy9KoIrtotUC7qqmr1uj3-KMl-jKozlbo8F1A_i_Xbn0jEscyDQWVvxqYkyJ77uwaHDTYgJS46euXOV-hkgnsKj5SB7QK5EU2HigPQAu2D_GKrak6buhdJPCDffxjsMXJ8eESMFbakfJNovSFTAw1Zu5pzBPzgMl6dKot3ziBRSk4EOZNypcDwXTIVIW1KDIHd3AJXILjWGIQOPfR7q6ceDC7VClxMrWtr478Uyr9GAhz98B0jmZDoPDF9hbaFOAaOClm2wd9hnWTebaIMB36pL4klMb6sZM1WYXmN4eUhLDPTW8uu55bzV2bJatgTPhs8jol8KPZiD5UIiQXG3_qigkqXj71em8q96RenFut4XI6MZTC3ZI5icGmJgMxRNKQMxz6sIU8KBzJewbN1ZGIINjX7TQZKAvsSrc_nxK8jOQSlCg_VQ1_b_llXOzmJS4EWUe2aoCklCfGdMG86RYTYq6FcDRNiS7pPjGAi9knX84LuFHLTC9XvIXJS7POiy1xJ6BG3ONf6iSGTpHGdtQyTmI8v0bumUgIpCQyOYJz-ySLf7pDPfJgjh1VahDHt6T5y_9AklVCvjixjWxCqU0AVXCvbfkGgcCX-kFo5Raxn3hT0YSDw=w472-h216-no?authuser=0" />
-                    </div>
-                </li>
+        <h1>Gallery</h1>
+        <hr>
 
-            </ul>
+        <!-- Portfolio Gallery Grid -->
+        <!-- First row -->
+        <!-- ====================================================== -->
+        <div class="row">
+            <div class="column">
+                <div class="content-gallery zoom">
+                    <img class="image"
+                        src="https://lh3.googleusercontent.com/3GGWkyhZpm1O9FNQnmWDwjle8JHMMUTAmAb5UfXUdSf6jOQuCfaMi0U1nT9Hb0_5wxP9VmZlyeKhilZL4yZFUOv05VYx7dwrOLuYxCB-43cUHPFPLaC-8khnTzKyMa2ejfBWLvpWlroHhhUV_8zzp6Rau1lOzDQ3lerIoKv9GAlJ_cqDNZxi9jUuCSoxLoXolANrxvbn0O5rUlfo93QapO4BVTtRUKbAZIzljcORKrTStsqQI1xvDzbQahUr8c1YS0BC_S9igz4AU8oauPUNrg3uJ6nor8WujtxuKUcBY1u4IHI54_lj6txAIP7bXapZDV4jhNKBWelnR4YbAGquulMxJ0zuOTTKpVDI-80Wjti85MUG6Y-dF4wY_DRa_844l6TrXTHIFVP1QWkue6kFDnAestuXwAGCO0VWheve_79fliJZ93CbBmS1smtoQ24lWeB2nxaWTvKt0ThcbF2qpdZYrHACUh5qEG_CucttCkqP4-cjVCKPwaR9MuY9PFitUHt1X0Gim96G_m7R6ebqM93R1p01aE0crxe3eyQgLRQOVG0bqjaU2Xg_fVC8pCepuw6CF4Fhkb7n7vrcWuFbHgyHZkhuCcGZM3562TXU072M9KE-zfFzW2R14BtmXlsOkMIxKAMfG-jPn5Wh_1558uyT5lM3NxbsJmJgQPu22gcci1_zOI97aoGAIy95mA=w1884-h860-no?authuser=0"
+                        alt="Mountains">
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="content-gallery zoom">
+                    <img class="image"
+                        src="https://lh3.googleusercontent.com/NsimPzxJie24epRTYq3QLjZlenfn1lSZT1xEgjrgcTtXuO28XcPpRWejgnnI-9kdJ89fGsMbXScEbJNqSvHpJU0ex-MljPg7l9oxxk3JJFjb_Wh3nnheUMf5KdynqiWuTqdvtSJlI0sRhqg4OjUXEcZkbyUT8Or0zleUhCOL3vZkE3XnmGOHUNKZPreu8sgWtFqtiue0KHh7TgaRsZNKftJpOAHR_LLJ9GaAPErsEzM9xymSxSn8EidzsA_SwV43vRZ5n2Lt6vtU0avhxuUqXNf7jOWeI0O48s_zrwl4UUqUC1FqKELJ1b_yob9yBcJ9ChLJYRtA7k6VsnZGPwxUv3_vbQe6Hdih2ZICuDOW89UXOZSTly-uTKnVIxBZ-3Zx6IofL6e0VaWMnt80HBT3VcRgyjC0opf_VeGlrxRp5JgLNNh7ojQpEVLsD434Qu3dhU9uspKVPP-7OKTAagu-jXspL2Fx68Hq31IWHykl-J6zuPIM5Jmsv2h0X1ZFfuk3zwCbfnOAiHHysDOL-D4UKo3V31rPSC09skP1cRWvEL1-xiZkKREKTvt-RFkV19au14rPgsqOmoVQqQTnmykAqxUtAxN1BvK6r1sAyQ6GN87LuTyIRKnUGNPKACIq9q8YRJxj5UKYl3ioNwt6VgS8Egru4xZpX5KAtJoShNHz_fVarlp5w6bIXNp_yhCELw=w1884-h860-no?authuser=0"
+                        alt="Lights">
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="content-gallery zoom">
+                    <img class="image"
+                        src="https://lh3.googleusercontent.com/y4NC9VqUWZvm0U8nUrlkKtY1emqm9dHG-608V4KvekUXJ-j3QUzIPPo8fVcVBqG2l71Kk_mOMWIM8LpPJS5dFEmqU_YH1DAZplxtsn7Wx7bz_RpibrQBLDnzRFeJnsikeoPmv1RgQf8kMRRcsaPE3qYEU71uV2YI1Ok3t9rQf602J8kahp-JWO4IBqK2kIZeKbw1ArgGiHE6epBSlWbVV3DjQWQmop2Z59f7BWwVbJ8jeuwJV5lMNTocT2mXZRDVDiPu_Po7CW7mvZX2nq4GSc0YeJUV7aqHA57bwNxOPKls4ICQ0GKwb7tFdcCZdYXA9Du-Vxj8vBUY9LQxC2wHhUrf4LI7TyuCGBINsQy0w32Vo9pcJQgBT2I6f-QF65RKqSc2WGYUIxH34TOn32cbCtEUcdAC_rWMH0Zs6VTgAGDn9gaV4Myalqy92XGGajlrtM_L2pfNE5-cDPwRkHnlErJFaZGo6YbssGvOSYWay5-MbcrpA_S_LYVp8dqz-NZENQfCNL2MyXKk0cMk1ueSpOoS0fMEj_lO5toyFV5ie7omzJvR86TstI6q7mPm-p834XJ7E7_OAt43mxhmx0JBsFGUieqsFgNaguDfidciDgYhdR2UTbv_LXaTyVMWD0jm2JISaTKliN7v8DFwBegyS1mjRmeW4NDg7M3xKwUTAFq1Cw6RELSrmaRilTDH0g=w1875-h855-no?authuser=0"
+                        alt="Nature">
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="content-gallery zoom">
+                    <img class="image"
+                        src="https://lh3.googleusercontent.com/OFd6T3L6mJGsnNU31KjvkGf2_mSdeNhsbv2KyPTU7ZN46yj1Sgxes-oTfYrQSLUz_Yl-UAFpWZKwyaBylBDGinYGCsFTKMNTDKg2uOwWkFUEVt0plB_Ki9bpZR_UiqqFrcq3e4EUzh7gnkpvvHiri0gXhBN_0sm1UA-t73MXmoFWzZo6fTntqouP9JgNickuQRyQ40zSnJB3FkqBT7RU8xRD-jHKi3R3Os8x1mNtmzOO8ph78uFp-ciQmcbPfrgnay9Bntl-MEagRhJKWV3EtSrUcRwyjrtrM_igQgd4bU7CXEWrnOdDmNWODLR_eSr6CFWLg4UUEJaZuGPCf6dISHhsJ3c5gKgORUTxTd3-gx1ZMI0pgK04Lc_TNrA-k7_WKl_vYyryr8QP7sjSExFF7XV1IneokCfnUT__7szNnmA7K8O7X7ZqI8Z2qkfFSG58tlraQ_LybTy8kCioq9_5AZqC4PEstntLa_XTeZbIp_toAh5iUhlUCdJ9GhYL1Q53IlFh8mMAj0x2qG5XPyy2qRy1S9qSgY9BnyhZ_QXXDUZ-ylRhLQ_3-ZX_o6A8w_nElFVslJn-AJrUGZcRDdH_OkCG81zOjaGmgd874buAA3VsXEma1CJCLMU5np3O6vttfFsd5u0RRr2akvwRGQ-hpcBD7zr38zMgVwML5SmT4o6CoqJns6vnLj_NYhkoXw=w1884-h864-no?authuser=0"
+                        alt="Mountains">
+
+                </div>
+            </div>
         </div>
+        <!-- ====================================================== -->
+
+        <!-- Second row -->
+        <!-- ====================================================== -->
+        <div class="row">
+            <div class="column">
+                <div class="content-gallery zoom">
+                    <img class="image"
+                        src="https://lh3.googleusercontent.com/xQLvzrcgzm-WSw5ggV4rHUsXD1FW-pDE0xLO9ycfEYrBRu7UxR21EtmS7UHsGwfwn9tW2ok-aj33ZoJIHsHfWFwGSeHRXrcuzXdqGk65W_bwoY3OAADjQW2VCVfdkmbF92RXSgjzU7qmRn_IbfJS8hru_6KXuE_BGGPMicA3w9TOGJrFANTPYRIi_pAzboKwnZbAJ-7Z7HKIOV2OTD3HzUufE22YpISCBpSJWcax3uyeYPgb_Qi62x9Ssdfyj9zwgHd9ocV4z1Vnhc9emtXqgCBKR7lWneJsSkdttMJ0LXhf_FDcPX3E4j53n0_e19S-9aiX7SZy-RNvxbTdiE0pi-UxTIVRDIi0vglRjvZoA_wd1YnIF7pF4R9lzvIotfnBJ6a2ogl7XbcYakyyhx7Wt38Oy3JFQbHhTA0PdthErnO9e2aQFynSUCzYnL2vnumm1e7aD9RKd5ZyLV-XQYInf0ZveKIxMDibsVfY78foMNBnrxn9sjk9sbtG3nsP9WFn1mlLPWFz3pkbmHIIIwqi85WLW6T5bArg1F5sscTgBtwCzzfHystS9bwb-GtbbsarnPwOzYLm0VxoMPAYQuhD16CEFy9eaB8xasyQB_-_H3RPcxDvsJWCQ5QvEjDM1Q3IvIJ1DyImNtLR3wjic1e_bN8wmDPUqdvt-0qbNtzJsgba6rd17wCVVX5_0-KE8A=w726-h967-no?authuser=0"
+                        alt="Mountains">
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="content-gallery zoom">
+                    <img class="image"
+                        src="https://lh3.googleusercontent.com/V-ChHlpC-6koxL0wQvG2yxK0Ybbzw9NZIs3DrHQYfRGtcduBCiSeFz_atQiwYxzdBBeMVgglhzUBxxnbNO5SDIaqE3PXMreP5olngoGT3AnCoWpDEPbV1xXiEac_RnD3u-wQJAez2-f0h0PZtvsU8lcuLVTI06saMC7VfWLjsEOm9OOgMtVf4TFe92zEKUpoC8MRReDQOLknDzytAmLCwJu2JpOqhlrJUVsHlfO5I7-E6MmEZpn3AZWAEEeAI-nzoAfeWCtgzJSBOPBkvLpkdPcRQSFmmxpUVH1gMa4YyFDKnZ82t8GX4lzUT_D7MnrEmTgtwrECaRcvakDvq9faXGVwJAB4vypDFZYWWHHAFkK96mZoViMSmdvN_PuTCCXYzEAQ-Z1gCYWDvSGY2mkK7AfCCo6aJPL__9pneTUGkTEwA71ZFsLlm21tyPmmiMrac3Cvmj4G_Lm8W74I2YJqnjfxrpwnHNUzu7f2NCuu4NtfH-mrqD49Yl2-mO3uWWpW3ZMEtPrtoJ2F_VLgGlI-2XBt-vxCHHwisa66outMZAbFHSwDbm5YBMEyPgv4ui7aHjP3z8F0_lp7Li8eJIGiHhqpgoZSDcY0KBmHAAfAP54Ehr2trxZA1AY1bmm7QesJvCV6ymcca8pHpAlqr4IgXgTr3Dgjs7jqvXnXfifi5QjXsCOCL_rfZ_1XrPjWFg=w726-h967-no?authuser=0"
+                        alt="Lights">
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="content-gallery zoom">
+                    <img class="image"
+                        src="https://lh3.googleusercontent.com/bNzkH9_BiHK9IU6wHMZH6GIsIUU4VJN6cF0Z4nD1ksxajOIzO7UfyuFAdTTZpm6HikMbS3TBDg6YEsZuEUxu88PVOgJw28_yU1TLqa81pTgXobMkJoWJcVOmvSHnIG5qes5RwNeKsyX8O8VQhksTlpeuVXimTVU5UiMX6GhF2VY97ZksAy4OjhRJD5tspsBwVLBzjZIMigywRIQXvJQBaUk3kBBggFHe-ybPtaO8oaojanNVze4OVYgIaMyQ6HqfSJ3Uz5aUWuR_gC1hYEXdfOe4Inl8gC9kFD04FkpR6u_63EtEy8SLYXhzmvsAoIZnEmtNm08Wro45R485VrnvmHEAf3y2SIoNJ70vFblmK7w71tjdsLl86ORVY-gVzWkIRQ-vw8XvKW9kLDV9TcgSGFDAfsr7ZAsojaSpQS8Bf6wWF0vJ3ddGK0437-9gXNO3d84LZVHprL0QwyLSps3Ryl-ef2FLplmGgvlcnelJ4t8acFPcSv04j7AQeq_wHSaj1DY4bLvXRkfGYz5swhocIaYKIt4SopAVkqNfqCyKuL2O1vR4bfO76IajnvpYG5pncXaH_j4LMPLDtx_p2TMFRqz3BQhmyDOjdRrykbSqG0IJaclvjLK11ya_NvK_Hv7GHiLeuGB80Nz6p5DMSwBDhvBWt7_RJt_vhTX5RZQXPchjDHtigF7MQ2dmqbE5nw=w726-h967-no?authuser=0"
+                        alt="Nature">
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="content-gallery zoom">
+                    <img class="image"
+                        src="https://lh3.googleusercontent.com/pQiwPjw7oLA1pO_iZxuMUkvMZgRp3e157gxykRrird-BY5moAhRlj0CmC9loAjN1sozMaxxQgeJVwJqrBox-AWgk5gUsMeSJEH6_zC716qJ916oE6OLUetE6UYks4UDzmSR32n9pQNY2xLgutkuPTC4RDkgqqDs283dPWKYYfbjeLPSHxhGEGZ5LckT52NFBHypLudO7M6WBp7yFWY0a7M1Ysr8PQ1gTrEvm2BnkJqGgIQqunqfmTcakBWI7GfQYjoJloPKVgzxsmSIQCtMcrT8zrqGjcOWEnq2z40VkOF8fPtvdvNAKYH7kgxt-ZQws5mHyKwyfk9qyVwWFN-k8Lp3vaOU6twya5FhKlJHWXMUvAMXZrjogEQBaNn_0KzQFhwIW7GA3j6APWF09nFc4rcfjsD02t8FOPTdL4TU-FTOmNJWHpjgk94XIvDER3nA9qH4VqIAUi5pZzTuyIjpk9AiO97cfAlHHuI3EWEeCDKwMhjHki8R441mmJ2VcB8JnErFcie2PwXVk2qmTjRVCcF8D2n4Bx9F64HDAuOdswURO-HLA8aXzqsEQSl_yXZIfAe8byoL8Q6egzY1CVLped9ET5jHjJZ3DeSPv54ddf7-7q47yiNNatXvlh4IKbNkHQTQ9Bqs75-abAEamSuMbk-D4k2SsqoJS7PFIyeDtJRXi0IFi2lLZ6QYgyYY96g=w726-h967-no?authuser=0"
+                        alt="Mountains">
+
+                </div>
+            </div>
+        </div>
+        <!-- ====================================================== -->
+
+        <!-- Third row -->
+        <!-- ====================================================== -->
+        <div class="row">
+            <div class="column">
+                <div class="content-gallery zoom">
+                    <img class="image"
+                        src="https://lh3.googleusercontent.com/YbwBau3A6mkGHbdn-XX4spnqIfijoc-Lr2o2vHomstg8cmZ5AeRr2dC-ObHa9fcJsT1nSzqYqIcqXp3Mm_zgi0HYdM--6Vx3UzzqPh0K5i1ZuLMyjzGokYeQzvvHGy-G5XfI9VVPGoS0DFf2CbIN0Sh23RLHDyuvrFTYUxTZxtHBPhewaGzVT88TtekNR9DzoqYOccMvpvpWMiNTBY7s8zPSBOD69TXOLVLq9l18DG3puMPJYbKVu67NEJ_iXkUQh18meFvo3zZVZkqTEgh7iCW8clIu9Cqiq_JhGBErFP7nyY8VJj3is2hfogGnHntgHB5_2tRovWSy7GtdDncKk3TnUoH0gNbjjjMLeWu40KRBkU2SmWsoQdKSh9_P9z9QZ-9KBiIHyAoE45zZ22qwHBIXI9x3c0nZ7QhdJUMxDM3IIX4ouGdr8jF3XEBFjc7Dy-4P-fdflL85v-Mj3yV6AbyvI8KVYmpNBzjmcpw8VeU2sdjFzn095l0KZmEvrkXNNslU5na-CdhKhe4WHHEvJM4QBr6n76tjks-DNrqvW-jiLWrYavc4TfWnq5CzQqJ8EGGvI243v5FLCcAfjks04QasZpM2Lf95prQjy4rleK07HZDdAGtFXAaIMHFqa2GMRW73AKNoFH6prOiOqrtHDudQBSfsblJ0BusBvA7_NG6QfZbKFCny7n7_owjacQ=w1290-h968-no?authuser=0"
+                        alt="Mountains">
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="content-gallery zoom">
+                    <img class="image"
+                        src="https://lh3.googleusercontent.com/FlCqouHMGLTPjtzFXQyAa_zeyGAUgcsOn-NPyJkF3UZlAUrlpPnudE0sNVPFkrgt2UA-FCusNdJHo7Yw4IeH05Xoh7D_BKyg2tX4tH3-3q6LbOxccN4wv6QxbhKk_ybvvwYwlCGDwLx_RoKLoEqDjiMkd5Sa-YqoFYuZMGP5KiNxeo8yKTVlMGy8fzOgfKOZQAS1PZXshVitphzmE0Y_VR6DwKmfZstNPVG_3wmGiMSW4CxS1mLDF6dY0DgkZANJgnbpWQzFxPkh7KEpsXtpDeFbbnqYxNSFrDg_JQPnU_4L1KfR6uLrVJHB7hbo3hIbb1p92ENqtDPz7SP6qb3gmUaafdkAVot1w8SXdLeHVWfznem3GGcOQGbGyUyEzFGRSfSGFsBmQ3FT4Jy_05wNhKZ8moMldQ7F6s-ZALcP821kXS3ikPUS4W49RJlFOOL1fWfDnN010-YEGNG0SIWL7NpU251N8aceyzbGVgFhq27YzrFk02x5HUChmxWdVZAzv3QlYcM-ePvSGLh4GrRgGBrxxbP5prnhyxKieb2afBa5j4TL3Ho3g9pSjxaHu1k8bQJunYbIf_9f21DGLoj_5OG2ETY41GweRTKZQfMAcydjV1x9Pss3NaGOSBC2o81kdcljrQ1rxnpYdhV13IqzRY7dlnRLGS5yYGZ2n-ueQtfzw5lueV_1IxSCDJmkoA=w1290-h968-no?authuser=0"
+                        alt="Lights">
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="content-gallery zoom">
+                    <img class="image"
+                        src="https://lh3.googleusercontent.com/aNy-YSgJZv1-MfqhK3D7W0NMjZLqGTCdWw2_vNC-UygyxrRRfmrMdd7P4LQ0GSMX8TCYHNbjRKveS3rmA1WwgIjX0a1uJPR558GaabCG5izGrRoudFdp11MFw2aT00cQX4G1QTnLTkYhD11HX2kQL9YA6RAJU-LbMM8mZSYxlEUg5T0knOmg4mcRrwYsA-y_w3g0f0sS5vMRt3ODTqpelKjUnCdU99bUNizklGKZ127f6pMH65Lsr60pict34Q1NdPy0c--_O8JK96uMz3VCSh9idVHPC-2e39_2Ril71eyAvGqDaNwMGX6GsrzeNHL77IFmlpQ_OnlX7QHelcuJxDlf-fPCbzfZlI-mu1JpsNsOUVCZ_E__CzUfPKJbiCs8L-e2PoGAu0QHe42pgZxch2h1f7uh-lrxTMBIj5ceaRngcDMWB93ZnmCNM2qAKByiywlQEzWO6dY4Hl8luupAd1U7hLX7B0WYjhYyC-obU7uZPLJ1MoCBm7f8pUg_2PBUktaKicrSmx6xU2UahNApEnhlgJecdBlS-0qX5HQscNIniqBdPLmbri19v-vFQwU_Tc2iGmvxawL1WUBQBfTQEYTrERAO8JXJ9O0pwvEc2xTU0YXyKvz2CijPoeueFnnRLm20Bk6J5uq0ti8DqLig7gPFLjU2xS1L_e82op_xTCxtJ3C4v6iBf4-WX93fNw=w300-h225-no?authuser=0"
+                        alt="Nature">
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="content-gallery zoom">
+                    <img class="image"
+                        src="https://lh3.googleusercontent.com/YXfMnhy9kdTuGHPhHJ1m669BUAZUwVbJUjeaqDp8foZQwJ9K9S0AElmKVvfhRJfidziZTbOsG7pwG2L0KWpo3f-S6hgls_Us0Hr0pUP2XwHHzOvb7gy7QP9RtwaNVUyCwFOcSA78l5n9v2JoCBM-XpcJFplzgixMOh6j7zi0R2SXNzzmI81vms0VJR1iJLWcUVdbvNxigrrzVS20kLROk2nkBbqritCrkDbKFUUfyhh_3Mm4Rz5zHyF-Y9JtJbOAJCJ2c8JpuzkUeZXDG-kWRPkjVb0o3K5y66p8PSBGT-ZxiTo2jkNxyqRViufSS1_q5n0UNupffowBi4VIsPb4Ah8-RbB8rFSGNNjWhoxJ9gPDPfZQkkTE2icLjK-nNsynC_L8yDl1Gk-2mvCdXnAmChx1Vl1Yik9ELqTPw10FRXWfbSHcAtEghpA3K4px9NFdnVouxgDY3UpvdKHIcrSONVNZZ_KOmJ40OXRnWE56CQcON66dHWOHtohs8Gu9YySC8glrUsxZpeMEr85I145SwrUJy-8VIS3wBDTKnFe89VoSg1upV_I19w5kg_DjcFIfYXheJcOcwHVEaVBn69heKywNwOCDftdk9JVnSu_-myrCfqd3tJmsxP0vHkScBU4826-ZzA-uzQ368kKCuUua6PlwvsovwcRKwi5uzeqsfBBk7FrzIq4e3833TT4o8w=w1290-h967-no?authuser=0"
+                        alt="Mountains">
+
+                </div>
+            </div>
+        </div>
+        <!-- ====================================================== -->
+        <br>
+
     </div>
-
-
-
 </body>
 
 </html>
